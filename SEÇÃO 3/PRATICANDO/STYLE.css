@@ -49,6 +49,13 @@ body{
     /*Sombreamento - valor 1 (x) valor 2(y) valor 3 (taxa de sombreamento) valor 4 cor */
     text-shadow: 3px 3px 2px #333 ;
 }
+.div-content p{
+    background-color: rgba(0,0,0,.8);
+    display:inline-block;
+    padding:10px;
+    border-bottom: 2px solid white;
+    text-transform: uppercase;
+}
 
 main{/*Utilizamos a propria tag main pois por padrão so pode haver 1 por pagina*/
     width: 80%;
@@ -56,9 +63,34 @@ main{/*Utilizamos a propria tag main pois por padrão so pode haver 1 por pagina
 }
 .sec-content{
     background-color: white;
-    padding: 15px;
+    padding: 10px;
     margin-top: 15px;
     margin-bottom: 15px;
+    overflow:auto;
+}
+
+.card{
+    width:32%;
+    float:left;
+    box-sizing: border-box;
+    
+}
+.card-1,.card-2{
+    margin-right: 1%;
+}
+.card img{
+    width:100%;
+    display: block;
+}
+.card p{
+    background-color: rgb(56, 56, 56);
+    color:white;
+    margin: 0;
+    padding:15px; /*Não alterou o tamanho do paragro pq não temos nenhuma propriedade de width*/
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    font-size:17px;
+    
 }
 
 .hd-2 h2{
