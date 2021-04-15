@@ -1,0 +1,80 @@
+/* existe alguns projetos na internet chamados de cssreset
+    - Ele deixa a mesma formatação em todos os browsers.
+    - Lembrar de incluir no index
+*/
+
+/* algumas formatações precisam ter a mesma formatação, trabalhamos no style as formatações genericas */
+
+/* GOOGLE FONTES */
+/* PLUG-IN CHROME IDENTIFICAR FONTE (WHATFONT)*/
+
+/* ==========================TAGS======================= */
+body{
+    font-family:'Open Sans', Arial,Helvetica, sans-serif;
+    color: #666;
+    /* removendo negrito - não irá passa para o h1 
+    font-weight: normal;
+    */
+    line-height:1.7;
+}
+
+a{
+    /* como a bordar não esta fazendo uma transição suave, vamos alterar isso. - na transição */
+    transition: color .2s linear, border .2s linear;
+    text-decoration:none;
+    border-bottom: 1px dotted;
+}
+a:hover{
+    border-bottom-color:transparent;
+}
+h1,h2,h3,h4,h5,h6{
+    color:#787878;
+    /* sem negrito */
+    font-weight: normal;
+    /* margem */
+    margin:0 0 24px 0;
+}
+
+
+
+/* ==========================CLASSES======================= */
+.main-hd{
+    position: fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:35%;
+    padding:124px 54px 72px;
+    box-sizing:border-box;
+    background-image: url(./images/overlay.png), url(./images/bg.jpg);
+    background-position: left top;
+    background-size: auto,cover;
+    text-align: right;
+}
+.main-hd-title{
+    font-size:22px;
+    line-height:1.5;
+    color: white;
+    font-weight: normal;
+    color:rgba(255,255,255,.5);
+}
+.main-hd-title strong{
+    color:white;
+    font-weight: normal;
+}
+.main-hd-link{
+    /* vamos fazer ele herdar a cor do elemento acima dele (h1) facilita manutenção  */
+    color:inherit;
+}
+.main-hd-link:hover{
+    color:#49bf9d;
+}
+
+/* width main content = 100-35=75% */
+.main-content{
+    width:65%;
+    margin-left: 35%;
+    padding:124px 54px 72px;
+    /* o padding esta somando ao tamanho do elemento */
+    box-sizing:border-box;
+}
